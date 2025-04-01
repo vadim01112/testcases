@@ -1,6 +1,6 @@
 Feature('store');
 
-Scenario.only('test registration',  ({ I }) => {
+Scenario('test registration',  ({ I }) => {
 I.amOnPage("http://opencart.qatestlab.net/index.php"); 
 I.click({xpath: '//span[text()="My Account"]'});
 I.click({xpath: '//a[text()="Register"]'});
