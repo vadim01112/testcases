@@ -15,7 +15,6 @@ Scenario.only("test registration", ({ I, homePage }) => {
   I.fillField({ xpath: '//input[@name="confirm"]' }, 987456);
   I.click({ xpath: '//label[@for="newsletter1"]' });
   I.click({ xpath: '//input[@name="agree"]' });
-  I.click({ xpath: '//input[@name="agree"]' });
   I.click({ xpath: '//input[@class="btn btn-primary"]' });
   I.see("Your Account Has Been Created!");
 });
