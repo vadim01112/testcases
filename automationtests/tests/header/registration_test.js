@@ -2,13 +2,13 @@ const { openRegistrationPage } = require("../../pages/home");
 
 Feature("store");
 
-Scenario.only("test registration", ({ I, homePage }) => {
-  I.openMainPage();
-  homePage.openRegistrationPage();
+Scenario("test registration", ({ I, homePage }) => {
+  I.openMainPage(); //использование метода openMainPage
+  homePage.openRegistrationPage(); //использование метода openRegistrationPage объекта homePage
   I.see("Register Account");
   I.fillField({ xpath: '//input[@name="firstname"]' }, "Oleg");
   I.fillField({ xpath: '//input[@name="lastname"]' }, 5);
-  I.fillField({ xpath: '//input[@name="email"]' }, Date.now() + "@gmail.com");
+  I.fillField({ xpath: '//input[@name="email"]' }, "s11fg@gmail.com");
   //pause();
   I.fillField({ xpath: '//input[@name="telephone"]' }, 83247);
   I.fillField({ xpath: '//input[@name="password"]' }, 987456);
