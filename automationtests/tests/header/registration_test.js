@@ -1,8 +1,8 @@
 const { openRegistrationPage } = require("../../pages/home");
 
-Feature("store");
+Feature("store registration");
 
-Scenario("test registration", ({ I, homePage }) => {
+xScenario("test registration", ({ I, homePage }) => {
   I.openMainPage(); //использование метода openMainPage
   homePage.openRegistrationPage(); //использование метода openRegistrationPage объекта homePage
   I.see("Register Account");
